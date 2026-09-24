@@ -1,0 +1,143 @@
+// =============================================
+// STORELY-NG — STORE THEMES
+// Applied via data-theme="<name>" on .store-page
+// =============================================
+
+// ── Default (forest green) — already in globals ────────────────────────────
+// Nothing needed here
+
+// ── Midnight ──────────────────────────────────────────────────────────────
+.store-page[data-theme="midnight"] {
+  background: #0d0d1a;
+
+  .store-banner__default {
+    background: linear-gradient(135deg, #1a1a3e 0%, #2d2d6b 100%);
+  }
+
+  .store-header {
+    background: #12121f;
+    border-color: #2a2a4a;
+  }
+
+  .store-meta__top h1 { color: #a78bfa; }
+  .badge--green { background: #1e1b4b; color: #a78bfa; }
+  .price { color: #a78bfa; }
+
+  .store-products { background: #0d0d1a; }
+  .category-btn {
+    background: #12121f;
+    border-color: #2a2a4a;
+    color: #94a3b8;
+    &:hover, &.active { border-color: #a78bfa; background: #1e1b4b; color: #a78bfa; }
+  }
+
+  .product-card {
+    background: #12121f;
+    border-color: #2a2a4a;
+    &__name { color: #e2e8f0; }
+    &__desc { color: #64748b; }
+  }
+
+  .whatsapp-btn { background: #128C7E; &:hover { background: #075E54; } }
+
+  .store-search-input {
+    background: #12121f;
+    border-color: #2a2a4a;
+    color: #e2e8f0;
+    &::placeholder { color: #475569; }
+  }
+
+  .store-footer { background: #0a0a14; border-color: #2a2a4a; p { color: #475569; } }
+  .store-footer__link { color: #a78bfa; }
+}
+
+// ── Terracotta ────────────────────────────────────────────────────────────
+.store-page[data-theme="terracotta"] {
+  background: #fdf7f3;
+
+  --green-deep:  #8b4513;
+  --green-light: #c1440e;
+  --green-pale:  #fdeee6;
+  --gold:        #d97706;
+
+  .store-banner__default {
+    background: linear-gradient(135deg, #8b4513 0%, #c1440e 100%);
+  }
+
+  .store-header { background: #fff8f5; border-color: #f0d5c8; }
+  .store-meta__top h1 { color: #8b4513; }
+  .badge--green { background: #fdeee6; color: #c1440e; }
+  .price { color: #8b4513; }
+
+  .store-products { background: #fdf7f3; }
+
+  .category-btn {
+    background: white;
+    border-color: #f0d5c8;
+    color: #9a6652;
+    &:hover, &.active { border-color: #c1440e; background: #fdeee6; color: #8b4513; }
+  }
+
+  .product-card { background: white; border-color: #f0d5c8; }
+
+  .whatsapp-btn { background: #25D366; }
+
+  .store-wa-contact { background: #8b4513; &:hover { background: #6d3510; } }
+
+  .store-footer { background: white; border-color: #f0d5c8; }
+}
+
+// ── Ocean ────────────────────────────────────────────────────────────────
+.store-page[data-theme="ocean"] {
+  background: #f0f9ff;
+
+  .store-banner__default {
+    background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+  }
+
+  .store-header { background: #f8fcff; border-color: #bae6fd; }
+  .store-meta__top h1 { color: #0c4a6e; }
+  .badge--green { background: #e0f2fe; color: #0284c7; }
+  .price { color: #0c4a6e; }
+
+  .store-products { background: #f0f9ff; }
+
+  .category-btn {
+    background: white;
+    border-color: #bae6fd;
+    color: #0369a1;
+    &:hover, &.active { border-color: #0284c7; background: #e0f2fe; color: #0c4a6e; }
+  }
+
+  .product-card { background: white; border-color: #bae6fd; &__name { color: #0c4a6e; } }
+  .whatsapp-btn { background: #25D366; }
+  .store-wa-contact { background: #0284c7; &:hover { background: #0369a1; } }
+  .store-footer { background: white; border-color: #bae6fd; }
+}
+
+// ── Forest ────────────────────────────────────────────────────────────────
+.store-page[data-theme="forest"] {
+  background: #f1f8f4;
+
+  .store-banner__default {
+    background: linear-gradient(135deg, #14532d 0%, #15803d 100%);
+  }
+
+  .store-header { background: #f8fff9; border-color: #bbf7d0; }
+  .store-meta__top h1 { color: #14532d; }
+  .badge--green { background: #dcfce7; color: #15803d; }
+  .price { color: #14532d; }
+
+  .store-products { background: #f1f8f4; }
+
+  .category-btn {
+    background: white;
+    border-color: #bbf7d0;
+    color: #166534;
+    &:hover, &.active { border-color: #15803d; background: #dcfce7; color: #14532d; }
+  }
+
+  .product-card { background: white; border-color: #bbf7d0; &__name { color: #14532d; } }
+  .store-wa-contact { background: #15803d; &:hover { background: #14532d; } }
+  .store-footer { background: white; border-color: #bbf7d0; }
+}

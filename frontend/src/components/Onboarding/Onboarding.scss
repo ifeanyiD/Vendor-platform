@@ -1,0 +1,89 @@
+.onboarding {
+  background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 0.4s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 160px;
+    height: 160px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+
+  &__dismiss {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: var(--transition);
+
+    &:hover { background: rgba(255,255,255,0.25); color: white; }
+  }
+
+  &__steps {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  &__step-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    transition: var(--transition);
+
+    &.active { background: var(--gold); width: 20px; border-radius: 4px; }
+    &.done { background: rgba(255,255,255,0.5); }
+  }
+
+  &__content {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    color: white;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  &__footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .btn--ghost {
+      color: rgba(255,255,255,0.65);
+      &:hover { background: rgba(255,255,255,0.1); color: white; }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+// =============================================
+// STORELY-NG — DARK MODE
+// Toggle via [data-theme="dark"] on <html>
+// =============================================
+
+[data-theme="dark"] {
+  --green-deep:    #2d9c5e;
+  --green-mid:     #3ab872;
+  --green-light:   #4ecf88;
+  --green-pale:    #0f2a1e;
+  --gold:          #f5a623;
+  --gold-dark:     #d4891a;
+  --gold-light:    #2a1f07;
+  --cream:         #111827;
+  --white:         #1e2532;
+  --dark:          #f0f0f0;
+  --gray-800:      #e0e0e0;
+  --gray-600:      #a0a0a0;
+  --gray-400:      #6b7280;
+  --gray-300:      #4b5563;
+  --gray-200:      #2d3748;
+  --gray-100:      #1a2030;
+
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:     0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,0.5);
+  --shadow-xl:     0 20px 60px rgba(0,0,0,0.6);
+
+  body {
+    background: var(--cream);
+    color: var(--dark);
+  }
+
+  // Cards, panels
+  .card,
+  .product-card,
+  .order-card,
+  .plan-card,
+  .analytics-card,
+  .stat-card {
+    background: var(--white);
+    border-color: var(--gray-200);
+  }
+
+  // Inputs
+  input, textarea, select {
+    background: var(--gray-100) !important;
+    border-color: var(--gray-200) !important;
+    color: var(--dark) !important;
+
+    &:focus {
+      border-color: var(--green-light) !important;
+    }
+
+    &::placeholder { color: var(--gray-400) !important; }
+  }
+
+  // Nav & Topbar
+  .dash-topbar,
+  .landing__nav {
+    background: rgba(17, 24, 39, 0.92);
+    border-color: var(--gray-200);
+  }
+
+  // Store link box
+  .store-link-box {
+    background: var(--gray-100);
+    border-color: var(--gray-200);
+  }
+
+  // Products search
+  .products-search {
+    background: var(--white) !important;
+    border-color: var(--gray-200) !important;
+    color: var(--dark) !important;
+  }
+
+  // Modal
+  .modal {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+  }
+
+  // Buttons
+  .btn--ghost {
+    color: var(--gray-600);
+    &:hover { background: var(--gray-100); color: var(--dark); }
+  }
+
+  .btn--outline {
+    border-color: var(--green-light);
+    color: var(--green-light);
+    &:hover { background: var(--green-light); color: var(--dark); }
+  }
+
+  // Category pills / filters
+  .category-btn,
+  .status-filter-btn,
+  .period-btn {
+    background: var(--white);
+    border-color: var(--gray-200);
+    color: var(--gray-600);
+
+    &:hover, &.active {
+      border-color: var(--green-light);
+      background: var(--green-pale);
+      color: var(--green-light);
+    }
+  }
+
+  // Landing page sections
+  .landing__features,
+  .landing__how,
+  .store-header,
+  .store-footer {
+    background: var(--white);
+  }
+
+  .landing__categories {
+    background: var(--green-pale);
+    .category-pill {
+      background: var(--gray-100);
+      color: var(--green-light);
+    }
+  }
+
+  .feature-card {
+    border-color: var(--gray-200);
+    &:hover { border-color: var(--green-light); }
+  }
+
+  // Sub banners
+  .sub-banner {
+    &--gold { background: var(--gold-light); border-color: #4a3010; }
+    &--green { background: var(--green-pale); border-color: #1a4a2e; }
+    &--gray { background: var(--gray-100); border-color: var(--gray-200); }
+    &--red { background: #2a0f0f; border-color: #5a2020; }
+  }
+
+  // Onboarding stays dark-on-dark friendly (uses own colors)
+  .onboarding { opacity: 0.95; }
+
+  // Scrollbar
+  ::-webkit-scrollbar-track { background: var(--gray-100); }
+  ::-webkit-scrollbar-thumb { background: var(--green-mid); }
+
+  // Auth pages
+  .auth-form-panel { background: var(--cream); }
+  .auth-form-inner h1 { color: var(--green-light); }
+
+  // Store page
+  .store-page {
+    background: var(--cream);
+    .store-banner__default { filter: brightness(0.7); }
+  }
+}
