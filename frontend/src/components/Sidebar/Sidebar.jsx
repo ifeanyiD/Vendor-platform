@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import './Sidebar.scss';
+import { domain, logo } from '../../../../shared/data/domain';
 
 const NAV_ITEMS = [
   { id: 'products',     icon: '📦', label: 'Products' },
@@ -44,8 +45,8 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, onClose }) {
       <aside className={`sidebar ${isOpen ? 'sidebar--open' : ''}`}>
         <div className="sidebar__brand">
           <div className="brand-logo">
-            <span className="brand-logo__v">V</span>
-            <span className="brand-logo__name">Vendora</span>
+            <span className="brand-logo__v">{logo}</span>
+            <span className="brand-logo__name">{domain}</span>
           </div>
           <button className="sidebar__close" onClick={onClose} aria-label="Close menu">✕</button>
         </div>

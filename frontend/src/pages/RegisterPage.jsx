@@ -3,6 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import './AuthPages.scss';
+import {logo, domain} from "../../../shared/data/domain"
 
 export default function RegisterPage() {
   const { register } = useAuth();
@@ -27,8 +28,8 @@ export default function RegisterPage() {
         <div className="auth-split">
           <div className="auth-brand">
             <Link to="/" className="brand">
-              <span className="brand__icon">V</span>
-              <span className="brand__name">Vendora</span>
+              <span className="brand__icon">{logo}</span>
+              <span className="brand__name">{domain}</span>
             </Link>
             <div className="auth-brand__content">
               <h2>Almost there!</h2>
